@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Wedding Invitation</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+
+
+<body>
+
+    <section class="video-intro">
+        <video autoplay muted loop playsinline webkit-playsinline class="back-video" id="myVideo" poster="assets/img/photo3.jpg">
+            <source src="assets/videos/couple_video1.mp4" type="video/mp4">
+        </video>
+        <!-- <video autoplay muted loop playsinline class="back-video" id="myVideo">
+            <source src="assets/videos/couple_video1.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video> -->
+
+        <div class="video-overlay-content">
+            <h3>Save the Date</h3>
+            <h1 class="couple-names-video">Kasun & Kasuni</h1>
+            <p class="wedding-date-video">25 . 05 . 2026</p>
+            <h2 id="guest-name-display" style="font-family: 'Great Vibes', cursive; font-size: 2.2rem; color: #fff; margin-top: 10px; text-shadow: 2px 2px 5px rgba(0,0,0,0.6);"></h2>    
+            <!-- style="font-family: 'Great Vibes', cursive; font-size: 2.2rem; color: #fff; margin-top: 10px; text-shadow: 2px 2px 5px rgba(0,0,0,0.6);"> -->
+            </h2>
+            <div class="scroll-down">
+
+                <div class="arrow"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="container" id="main-content">
+
+        <section class="about-couple">
+            <h3>Our Story</h3>
+            <p>Two hearts, one journey. We are so thrilled to start this new chapter of our lives together and we can't
+                wait to celebrate our special day with our favorite people in the world.</p>
+        </section>
+
+        <section class="photo-gallery-staggered">
+            <h3>Beautiful Moments</h3>
+            <div class="gallery-wrap">
+                <img src="assets/img/photo1.jpg" alt="Couple Moment 1">
+                <img src="assets/img/photo2.jpg" alt="Couple Moment 2">
+                <img src="assets/img/photo3.jpg" alt="Couple Moment 3">
+                <img src="assets/img/photo4.jpg" alt="Couple Moment 4">
+            </div>
+        </section>
+
+        <section class="details">
+            <div class="detail-box">
+                <h4>Date</h4>
+                <p>May 25, 2026</p>
+            </div>
+            <div class="detail-box">
+                <h4>Time</h4>
+                <p>09:00 AM Onwards</p>
+            </div>
+            <div class="detail-box">
+                <h4> Venue</h4>
+                <p>Grand Hotel, Colombo</p>
+            </div>
+        </section>
+
+        <section class="countdown-section">
+            <h3>Counting down to the big day...</h3>
+            <div id="countdown" class="countdown"></div>
+        </section>
+
+
+
+        <section class="rsvp-section">
+            <h3>Will you be joining us?</h3>
+            <p>Please confirm your attendance</p>
+            <form id="rsvp-form">
+                <input type="text" id="guest-name" placeholder="Your Name" required>
+
+                <input type="tel" id="guest-phone" placeholder="Your Contact Number" required>
+
+                <select id="guest-relation" required>
+                    <option value="" disabled selected>Relationship to Couple</option>
+                    <option value="Family">Family</option>
+                    <option value="Friend">Friend</option>
+                    <option value="Colleague">Colleague</option>
+                </select>
+
+                <select id="guest-attending" required>
+                    <option value="" disabled selected>Are you attending?</option>
+                    <option value="Yes">Joyfully Accepts</option>
+                    <option value="No">Regretfully Declines</option>
+                </select>
+
+                <button type="submit" class="rsvp-btn">Confirm Attendance</button>
+            </form>
+        </section>
+
+
+        <section class="map-section">
+            <h3>Track Location</h3>
+            <div class="map-container">
+                <iframe src="https://maps.google.com/maps?q=Grand+Hotel+Colombo&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Grand+Hotel+Colombo" target="_blank"
+                class="direction-btn">📍 Get Directions</a>
+        </section>
+
+        <div class="music-control" onclick="toggleMusic()">
+            <span id="music-icon">🎵</span>
+        </div>
+
+        <audio id="bgMusic" loop>
+            <source src="assets/music/music2.mp3" type="audio/mp3">
+        </audio>
+
+        <footer>
+            <p>Made for Kasun & Kasuni</p>
+        </footer>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
