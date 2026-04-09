@@ -37,7 +37,7 @@ document.getElementById("rsvp-form").addEventListener("submit", function(event) 
     const attending = document.getElementById("guest-attending").value;
 
 
-    const whatsappNumber = "94714788795"; 
+    const whatsappNumber = "94XXXXXXXX"; 
 
     let message = `*Wedding Attendance* 💍%0A%0A`;
     message += `*Name:* ${name}%0A`;
