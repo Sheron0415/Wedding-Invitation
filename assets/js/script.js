@@ -39,7 +39,7 @@ document.getElementById("rsvp-form").addEventListener("submit", function(event) 
 
     const whatsappNumber = "94714788795"; 
 
-    let message = `*Wedding RSVP* 💍%0A%0A`;
+    let message = `*Wedding Attendance* 💍%0A%0A`;
     message += `*Name:* ${name}%0A`;
     message += `*Contact Number:* ${phone}%0A`; // Include the phone number in the message
     message += `*Relationship:* ${relation}%0A`;
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const guestName = urlParams.get('to'); 
     const displayElement = document.getElementById('guest-name-display');
 
-    // displayElement එක තියෙනවද කියලා චෙක් කරනවා එරර් එන්නේ නැති වෙන්න
+    
     if (displayElement) {
         if (guestName) {
             displayElement.innerHTML = "Dear " + guestName + ",";
