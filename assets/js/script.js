@@ -1,5 +1,5 @@
 // --- 1. Countdown Timer Logic ---
-const weddingDate = new Date("May 25, 2026 09:00:00").getTime();
+const weddingDate = new Date("August 25, 2026 09:00:00").getTime();
 
 const timer = setInterval(function() {
     const now = new Date().getTime();
@@ -37,7 +37,7 @@ document.getElementById("rsvp-form").addEventListener("submit", function(event) 
     const attending = document.getElementById("guest-attending").value;
 
 
-    const whatsappNumber = "94XXXXXXXX"; 
+    const whatsappNumber = "+94714788795"; // Replace with your WhatsApp number
 
     let message = `*Wedding Attendance* 💍%0A%0A`;
     message += `*Name:* ${name}%0A`;
